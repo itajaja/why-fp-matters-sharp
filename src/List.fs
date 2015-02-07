@@ -33,4 +33,7 @@ module Lists =
   let and_ (a, b) = a && b
   let allTrue l = foldr (l, and_, true)
 
-  let append(a, b) = foldr(a,Cons,b)
+  let append(a, b) = foldr(a, Cons, b)
+
+  let count(a, n) = n + 1
+  let length a = foldr(a, count, 0)
