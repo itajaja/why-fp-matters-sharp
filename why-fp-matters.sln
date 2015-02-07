@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "why-fp-matters", "why-fp-matters.fsproj", "{33FCF9F9-6639-40FF-9FA9-13C83C1849A7}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "why-fp-matters", "src\why-fp-matters.fsproj", "{33FCF9F9-6639-40FF-9FA9-13C83C1849A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
