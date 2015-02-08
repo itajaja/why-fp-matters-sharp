@@ -27,3 +27,10 @@ module Lists =
 
   let count a b = a + 1
   let length l = foldr count 0 l
+
+  let fAndCons f = f >> Cons
+
+  let map f = foldr (fAndCons f) Nil
+
+  let double x = x * 2
+  let doubleAll l = map double l

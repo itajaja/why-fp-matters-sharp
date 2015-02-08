@@ -21,3 +21,5 @@ module Examples =
   let list4 = append list1 list3 // [1, 2, 3, 4, 5, 6, 7, 8]
 
   let lit4Lenght = length list4 // 8
+
+  let list5 = doubleAll(list1) // [2, 4, 6, 8]
