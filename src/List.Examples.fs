@@ -23,3 +23,7 @@ module Examples =
   let lit4Lenght = length list4 // 8
 
   let list5 = doubleAll(list1) // [2, 4, 6, 8]
+
+  let matrix1 = Cons list1 (Cons list1 (Cons list3 Nil))
+
+  let sum2 = sumMatrix matrix1 // 46

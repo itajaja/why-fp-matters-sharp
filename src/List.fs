@@ -34,3 +34,5 @@ module Lists =
 
   let double x = x * 2
   let doubleAll = map double
+
+  let sumMatrix = (map sum) >> sum
