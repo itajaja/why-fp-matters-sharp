@@ -36,3 +36,23 @@ module Lists =
   let doubleAll = map double
 
   let sumMatrix = (map sum) >> sum
+
+  /// Trees
+
+  type Tree<'T> = Node of 'T * (Tree<'T> List)
+
+  let Node a b = Node(a, b)
+
+  let rec foldTree f g a tree =
+    match tree with
+    | Node(label, subtrees) -> f label (foldTreeList f g a subtrees)
+  and foldTreeList f g a treeList =
+    match treeList with
+    | subtree :: rest -> g (foldTree f g a subtree) (foldTreeList f g a rest)
+    | [] -> a
+
+  let sumTree tree = foldTree plus plus 0 tree
+
+  let treeLabels tree = foldTree Cons append Nil tree
+
+  let mapTree f = foldTree (f >> Node) Cons Nil

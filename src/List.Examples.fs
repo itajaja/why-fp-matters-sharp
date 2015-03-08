@@ -27,3 +27,11 @@ module Examples =
   let matrix1 = Cons list1 (Cons list1 (Cons list3 Nil))
 
   let sum2 = sumMatrix matrix1 // 46
+
+  let tree1 = Node 1 [(Node 2 Nil); (Node 3 [(Node 4 Nil); (Node 5 Nil)])]
+
+  let sum3 = sumTree tree1 // 15
+
+  let labels = treeLabels tree1 // [1, 2, 3, 4, 5]
+
+  let tree2 = mapTree double tree1 //[2 [4; 6 [8, 10] ] ]
