@@ -50,6 +50,7 @@
     <None Include="App.config" />
     <Compile Include="List.fs" />
     <Compile Include="List.Examples.fs" />
+    <Compile Include="NewtonRaphson.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <PropertyGroup>
